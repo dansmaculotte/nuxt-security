@@ -33,7 +33,7 @@ module.exports = {
           disableAndroid: false,
           browserSniff: true
         },
-        referer: 'same-origin',
+        referrer: 'same-origin',
         features: {
           notifications: ["'none'"]
         },

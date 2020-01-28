@@ -8,22 +8,23 @@
 
 ## Features
 
-This module configure
+This module allows you to configure various security headers such as CSP, HSTS or even generate security.txt file.
+Here is a list of availables features :
 
-## :construction: WIP
-
-This module is considered experimental and a work-in-progress.
+- Strict-Transport-Security header
+- Content-Security-Policy header
+- X-Frame-Options header
+- X-Xss-Protection
+- X-Content-Type-Options header
+- Referrer-Policy header
+- Feature-Policy header
+- security.txt file generation
 
 ### ToDo
 
-- [x] Strict-Transport-Security
-- [x] Content-Security-Policy
-- [x] X-Frame-Options
-- [x] X-Content-Type-Options
-- [x] Referrer-Policy
-- [x] Feature-Policy
-- [x] security.txt
-- [ ] Documentation
+- [ ] Sign security.txt with OpenPGP
+- [ ] Headers as meta tags for SPA
+- [ ] Public-Key-Pins
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
@@ -56,6 +57,130 @@ yarn add @dansmaculotte/nuxt-security # or npm install @dansmaculotte/nuxt-secur
   security: {}
 }
 ```
+
+## Options
+
+### `dev`
+
+- Default: `process.env.SECURITY_DEV || false`
+
+Enable module in development mode
+
+### `hsts`
+
+- Default: `null`
+
+This option rely on [helmet hsts](https://helmetjs.github.io/docs/hsts/) package.
+
+Example:
+
+```js
+hsts: {
+  maxAge: 15552000,
+  includeSubDomains: true,
+  preload: true
+},
+```
+
+### `csp`
+
+- Default: `null`
+
+This option rely on [helmet csp](https://helmetjs.github.io/docs/csp/) package.
+
+Example:
+
+```js
+csp: {
+  directives: {
+    defaultSrc: ["'self'"],
+    scriptSrc: ["'self'"],
+    connectSrc: ["'self'"],
+    imgSrc: ["'self'"],
+    styleSrc: ["'self'"]
+  },
+  loose: false,
+  reportOnly: false,
+  setAllHeaders: false,
+  disableAndroid: false,
+  browserSniff: true
+},
+```
+
+### `referrer`
+
+- Default: `null`
+
+This option rely on [helmet referrer policy](https://helmetjs.github.io/docs/referrer-policy/) package.
+
+Example:
+
+```js
+referrer: 'same-origin',
+```
+
+### `features`
+
+- Default: `null`
+
+This option rely on [helmet feature policy](https://helmetjs.github.io/docs/feature-policy/) package.
+
+Example:
+
+```js
+features: {
+  notifications: ["'none'"]
+},
+```
+
+### `securityFile`
+
+- Default: `null`
+
+This option allows you to generate a `security.txt` described by [securitytxt.org](https://securitytxt.org/).
+
+When generating for SPA applications, the file will appear in the `dist/.well-known` folder.
+
+For universal applications, the file is accessible at this path: `/.well-known/security.txt`.
+
+Example:
+
+```js
+securityFile: {
+  contacts: [
+    'mailto:security@example.com',
+    'https://example.com/security'
+  ],
+  // or contacts: 'mailto:security@example.com'
+  canonical: 'https://example.com/.well-know/security.txt',
+  preferredLanguages: ['fr', 'en'],
+  // or preferredLanguages: 'fr',
+  encryptions: ['https://example.com/pgp-key.txt'],
+  // or encryptions: 'https://example.com/pgp-key.txt',
+  acknowledgments: ['https://example.com/hall-of-fame.html'],
+  // or acknowledgments: 'https://example.com/hall-of-fame.html',
+  policies: ['https://example.com/policy.html'],
+  // or policies: 'https://example.com/policy.html',
+  hirings: ['https://example.com/jobs.html']
+  // or hirings: 'https://example.com/jobs.html'
+},
+```
+
+### `additionalHeaders`
+
+- Default: `false`
+
+Example:
+
+```js
+additionnalHeaders: true
+```
+
+Add additional headers :
+
+- `X-Frame-Options: SAMEORIGIN` - [documentation](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
+- `X-Xss-Protection: 1; mode=block` - [documentation](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-xss-protection)
+- `X-Content-Type-Options: nosniff` - [documentation](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-content-type-options)
 
 ## Development
 
