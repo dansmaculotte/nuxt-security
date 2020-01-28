@@ -4,7 +4,7 @@ describe('module', () => {
   let nuxt
 
   beforeAll(async () => {
-    ;({ nuxt } = await setup(loadConfig(__dirname, './fixture')))
+    ;({ nuxt } = await setup(loadConfig(__dirname, './')))
   }, 60000)
 
   afterAll(async () => {
