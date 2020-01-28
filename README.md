@@ -10,6 +10,15 @@
 
 This module is considered experimental and a work-in-progress.
 
+### ToDo
+
+- [x] Strict-Transport-Security
+- [ ] Content-Security-Policy
+- [ ] X-Frame-Options
+- [ ] X-Content-Type-Options
+- [ ] Referrer-Policy
+- [ ] Feature-Policy
+
 [📖 **Release Notes**](./CHANGELOG.md)
 
 ## Setup
@@ -29,7 +38,12 @@ yarn add @dansmaculotte/nuxt-csp # or npm install @dansmaculotte/nuxt-csp
     '@dansmaculotte/nuxt-csp',
 
     // With options
-    ['@dansmaculotte/nuxt-csp', { /* module options */ }]
+    [
+      '@dansmaculotte/nuxt-csp',
+      {
+        /* module options */
+      }
+    ]
   ]
 }
 ```
@@ -47,11 +61,10 @@ yarn add @dansmaculotte/nuxt-csp # or npm install @dansmaculotte/nuxt-csp
 Copyright (c) Dans Ma Culotte <tech@dansmaculotte.fr>
 
 <!-- Badges -->
+
 [npm-version-src]: https://img.shields.io/npm/v/@dansmaculotte/nuxt-csp/latest.svg?style=flat-square
 [npm-version-href]: https://npmjs.com/package/@dansmaculotte/nuxt-csp
-
 [npm-downloads-src]: https://img.shields.io/npm/dt/@dansmaculotte/nuxt-csp.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/@dansmaculotte/nuxt-csp
-
 [license-src]: https://img.shields.io/npm/l/@dansmaculotte/nuxt-csp.svg?style=flat-square
 [license-href]: https://npmjs.com/package/@dansmaculotte/nuxt-csp
