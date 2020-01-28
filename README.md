@@ -22,7 +22,7 @@ This module is considered experimental and a work-in-progress.
 - [x] X-Content-Type-Options
 - [x] Referrer-Policy
 - [x] Feature-Policy
-- [ ] .well-known/security.txt
+- [x] security.txt
 - [ ] Documentation
 
 [📖 **Release Notes**](./CHANGELOG.md)
@@ -50,7 +50,10 @@ yarn add @dansmaculotte/nuxt-security # or npm install @dansmaculotte/nuxt-secur
         /* module options */
       }
     ]
-  ]
+  ],
+
+  // Top level options
+  security: {}
 }
 ```
 

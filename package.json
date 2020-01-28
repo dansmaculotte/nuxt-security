@@ -26,6 +26,8 @@
   "main": "lib/module.js",
   "scripts": {
     "dev": "nuxt test/fixture",
+    "dev:generate": "nuxt generate test/fixture",
+    "dev:build": "nuxt build test/fixture",
     "lint": "eslint --ext .js,.vue lib test",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && jest"

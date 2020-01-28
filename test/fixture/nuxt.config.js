@@ -37,6 +37,18 @@ module.exports = {
         features: {
           notifications: ["'none'"]
         },
+        securityFile: {
+          contacts: [
+            'mailto:security@example.com',
+            'https://example.com/security'
+          ],
+          canonical: 'https://example.com/.well-know/security.txt',
+          preferredLanguages: ['fr', 'en'],
+          encryptions: ['https://example.com/pgp-key.txt'],
+          acknowledgments: ['https://example.com/hall-of-fame.html'],
+          policies: ['https://example.com/policy.html'],
+          hirings: ['https://example.com/jobs.html']
+        },
         additionalHeaders: true
       }
     }
