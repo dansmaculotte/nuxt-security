@@ -170,13 +170,7 @@ securityFile: {
 
 - Default: `false`
 
-Example:
-
-```js
-additionnalHeaders: true
-```
-
-Add additional headers :
+If `true` it adds additional headers :
 
 - `X-Frame-Options: SAMEORIGIN` - [documentation](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 - `X-Xss-Protection: 1; mode=block` - [documentation](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-xss-protection)
