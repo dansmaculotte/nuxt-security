@@ -6,7 +6,8 @@
     "nuxt",
     "nuxt-module",
     "csp",
-    "content-security-policy"
+    "content-security-policy",
+    "hsts"
   ],
   "repository": "dansmaculotte/nuxt-csp",
   "license": "MIT",
@@ -20,12 +21,14 @@
   ],
   "main": "lib/module.js",
   "scripts": {
-    "dev": "nuxt example",
-    "lint": "eslint --ext .js,.vue example lib test",
+    "dev": "nuxt test/fixture",
+    "lint": "eslint --ext .js,.vue lib test",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && jest"
   },
   "dependencies": {
+    "consola": "^2.11.3",
+    "helmet-csp": "^2.9.4",
     "hsts": "^2.2.0"
   },
   "devDependencies": {
