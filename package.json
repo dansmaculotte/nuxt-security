@@ -1,15 +1,19 @@
 {
-  "name": "@dansmaculotte/nuxt-csp",
+  "name": "@dansmaculotte/nuxt-security",
   "version": "0.0.0",
-  "description": "Module for Nuxt.js to configure CSP headers",
+  "description": "Module for Nuxt.js to configure security headers and more",
   "keywords": [
     "nuxt",
     "nuxt-module",
     "csp",
     "content-security-policy",
-    "hsts"
+    "hsts",
+    "strict-transport-security",
+    "referrer-policy",
+    "feature-policy",
+    "security-txt"
   ],
-  "repository": "dansmaculotte/nuxt-csp",
+  "repository": "dansmaculotte/nuxt-security",
   "license": "MIT",
   "contributors": [
     {
