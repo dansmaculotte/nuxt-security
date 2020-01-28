@@ -2,6 +2,12 @@
   "name": "@dansmaculotte/nuxt-csp",
   "version": "0.0.0",
   "description": "Module for Nuxt.js to configure CSP headers",
+  "keywords": [
+    "nuxt",
+    "nuxt-module",
+    "csp",
+    "content-security-policy"
+  ],
   "repository": "dansmaculotte/nuxt-csp",
   "license": "MIT",
   "contributors": [
@@ -19,7 +25,9 @@
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "hsts": "^2.2.0"
+  },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",

@@ -10,9 +10,16 @@ module.exports = {
     resourceHints: false
   },
   modules: [
-    { handler: require('../') }
+    {
+      handler: require('../'),
+      options: {
+        hsts: {
+          maxAge: 15552000,
+          includeSubDomains: true,
+          preload: true
+        }
+      }
+    }
   ],
-  buildModules: [
-    '@nuxtjs/dotenv',
-  ]
+  buildModules: ['@nuxtjs/dotenv']
 }
