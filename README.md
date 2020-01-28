@@ -13,11 +13,12 @@ This module is considered experimental and a work-in-progress.
 ### ToDo
 
 - [x] Strict-Transport-Security
-- [ ] Content-Security-Policy
-- [ ] X-Frame-Options
-- [ ] X-Content-Type-Options
-- [ ] Referrer-Policy
-- [ ] Feature-Policy
+- [x] Content-Security-Policy
+- [x] X-Frame-Options
+- [x] X-Content-Type-Options
+- [x] Referrer-Policy
+- [x] Feature-Policy
+- [ ] Documentation
 
 [📖 **Release Notes**](./CHANGELOG.md)
 

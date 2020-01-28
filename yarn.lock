@@ -4490,6 +4490,11 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "2.1.1"
 
+feature-policy@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/feature-policy/-/feature-policy-0.4.0.tgz#85a3a44f77f41b5535f30117ba8aa99b80a08b4c"
+  integrity sha512-SGAI4zDethorgbUdtHuL74gnIcjfHA4bZDgocR7SIz/Zu1sknKAHciaCbiClivfiW7he2V3HZ64UvE0/3Ai5mA==
+
 figgy-pudding@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
@@ -8638,6 +8643,11 @@ redent@^2.0.0:
   dependencies:
     indent-string "^3.0.0"
     strip-indent "^2.0.0"
+
+referrer-policy@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/referrer-policy/-/referrer-policy-1.2.0.tgz#b99cfb8b57090dc454895ef897a4cc35ef67a98e"
+  integrity sha512-LgQJIuS6nAy1Jd88DCQRemyE3mS+ispwlqMk3b0yjZ257fI1v9c+/p6SD5gP5FGyXUIgrNOAfmyioHwZtYv2VA==
 
 regenerate-unicode-properties@^8.1.0:
   version "8.1.0"

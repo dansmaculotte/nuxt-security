@@ -28,8 +28,10 @@
   },
   "dependencies": {
     "consola": "^2.11.3",
+    "feature-policy": "^0.4.0",
     "helmet-csp": "^2.9.4",
-    "hsts": "^2.2.0"
+    "hsts": "^2.2.0",
+    "referrer-policy": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "latest",

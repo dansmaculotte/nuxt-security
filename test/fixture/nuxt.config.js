@@ -21,7 +21,7 @@ module.exports = {
         },
         csp: {
           directives: {
-            defaultSrc: ["'none'"],
+            defaultSrc: ["'self'"],
             scriptSrc: ["'self'"],
             connectSrc: ["'self'"],
             imgSrc: ["'self'"],
@@ -32,7 +32,12 @@ module.exports = {
           setAllHeaders: false,
           disableAndroid: false,
           browserSniff: true
-        }
+        },
+        referer: 'same-origin',
+        features: {
+          notifications: ["'none'"]
+        },
+        additionalHeaders: true
       }
     }
   ],
