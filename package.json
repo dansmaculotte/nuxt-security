@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "consola": "^2.11.3",
-    "feature-policy": "^0.4.0",
+    "feature-policy": "github:miguel-a-calles-mba/feature-policy",
     "helmet-csp": "^2.9.4",
     "hsts": "^2.2.0",
     "referrer-policy": "^1.2.0"
