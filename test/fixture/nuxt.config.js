@@ -27,11 +27,7 @@ module.exports = {
             imgSrc: ["'self'"],
             styleSrc: ["'self'"]
           },
-          loose: false,
-          reportOnly: false,
-          setAllHeaders: false,
-          disableAndroid: false,
-          browserSniff: true
+          reportOnly: false
         },
         referrer: 'same-origin',
         features: {

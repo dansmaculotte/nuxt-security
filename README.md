@@ -95,15 +95,9 @@ csp: {
   directives: {
     defaultSrc: ["'self'"],
     scriptSrc: ["'self'"],
-    connectSrc: ["'self'"],
-    imgSrc: ["'self'"],
-    styleSrc: ["'self'"]
+    objectSrc: ["'self'"],
   },
-  loose: false,
   reportOnly: false,
-  setAllHeaders: false,
-  disableAndroid: false,
-  browserSniff: true
 },
 ```
 
