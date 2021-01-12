@@ -33,31 +33,31 @@
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "consola": "^2.11.3",
+    "consola": "^2.15.0",
     "feature-policy": "^0.5.0",
     "helmet-csp": "^2.9.4",
     "hsts": "^2.2.0",
     "referrer-policy": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/preset-env": "latest",
-    "@commitlint/cli": "latest",
-    "@commitlint/config-conventional": "latest",
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.11",
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
     "@nuxtjs/dotenv": "latest",
-    "@nuxtjs/eslint-config": "latest",
-    "@nuxtjs/module-test-utils": "latest",
+    "@nuxtjs/eslint-config": "5.0.0",
+    "@nuxtjs/module-test-utils": "1.6.3",
     "babel-eslint": "latest",
-    "babel-jest": "latest",
-    "codecov": "latest",
-    "eslint": "latest",
-    "eslint-config-prettier": "latest",
-    "eslint-plugin-prettier": "latest",
-    "husky": "latest",
-    "jest": "latest",
-    "nuxt-edge": "latest",
-    "prettier": "latest",
-    "standard-version": "latest"
+    "babel-jest": "26.6.3",
+    "codecov": "3.8.1",
+    "eslint": "7.17.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "husky": "4.3.7",
+    "jest": "26.6.3",
+    "nuxt-edge": "2.15.0-26840219.3265e949",
+    "prettier": "2.2.1",
+    "standard-version": "9.1.0"
   },
   "publishConfig": {
     "access": "public"
