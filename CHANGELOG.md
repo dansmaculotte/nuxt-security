@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/dansmaculotte/nuxt-security/compare/v0.0.1...v0.0.2) (2021-01-15)
+
+
+### Bug Fixes
+
+* security.txt generation in static mode ([892f292](https://github.com/dansmaculotte/nuxt-security/commit/892f29288f9215cfabbf57e32b4eecb639238249))
+
 ### [0.0.1](https://github.com/dansmaculotte/nuxt-security/compare/v0.0.1-0...v0.0.1) (2021-01-12)
 
 
