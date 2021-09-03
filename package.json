@@ -18,6 +18,9 @@
   "contributors": [
     {
       "name": "Gaël Reyrol <gael@dansmaculotte.fr>"
+    },
+    {
+      "name": "Romain Touzé <romain@dansmaculotte.fr>"
     }
   ],
   "files": [
@@ -40,24 +43,24 @@
     "referrer-policy": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.12.10",
-    "@babel/preset-env": "7.12.11",
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
+    "@babel/core": "7.15.4",
+    "@babel/preset-env": "7.15.4",
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
     "@nuxtjs/dotenv": "latest",
-    "@nuxtjs/eslint-config": "5.0.0",
+    "@nuxtjs/eslint-config": "6.0.1",
     "@nuxtjs/module-test-utils": "1.6.3",
     "babel-eslint": "latest",
-    "babel-jest": "26.6.3",
-    "codecov": "3.8.1",
-    "eslint": "7.17.0",
-    "eslint-config-prettier": "7.1.0",
-    "eslint-plugin-prettier": "3.3.1",
-    "husky": "4.3.7",
+    "babel-jest": "27.1.0",
+    "codecov": "3.8.3",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.2",
     "jest": "26.6.3",
-    "nuxt-edge": "2.15.0-26840219.3265e949",
-    "prettier": "2.2.1",
-    "standard-version": "9.1.0"
+    "nuxt-edge": "2.16.0-27172816.2ef05373",
+    "prettier": "2.3.2",
+    "standard-version": "9.3.1"
   },
   "publishConfig": {
     "access": "public"
