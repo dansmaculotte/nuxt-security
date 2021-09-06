@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/dansmaculotte/nuxt-security/compare/v0.0.4...v0.0.5) (2021-09-06)
+
+
+### Bug Fixes
+
+* add permissions-policy header support (fix [#17](https://github.com/dansmaculotte/nuxt-security/issues/17)) ([18800c0](https://github.com/dansmaculotte/nuxt-security/commit/18800c0669a7fbdfcbe546c0928645bd199ca6c9))
+
 ### [0.0.4](https://github.com/dansmaculotte/nuxt-security/compare/v0.0.3...v0.0.4) (2021-05-25)
 
 ### [0.0.3](https://github.com/dansmaculotte/nuxt-security/compare/v0.0.2...v0.0.3) (2021-04-07)
