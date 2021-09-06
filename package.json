@@ -37,9 +37,10 @@
   },
   "dependencies": {
     "consola": "^2.15.0",
-    "feature-policy": "^0.6.0",
+    "feature-policy": "0.6.0",
     "helmet-csp": "^3.3.1",
     "hsts": "^2.2.0",
+    "permissions-policy": "0.6.0",
     "referrer-policy": "^1.2.0"
   },
   "devDependencies": {

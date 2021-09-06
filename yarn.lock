@@ -5430,9 +5430,9 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "2.1.1"
 
-feature-policy@^0.6.0:
+feature-policy@0.6.0:
   version "0.6.0"
-  resolved "https://registry.npmjs.org/feature-policy/-/feature-policy-0.6.0.tgz"
+  resolved "https://registry.yarnpkg.com/feature-policy/-/feature-policy-0.6.0.tgz#4d1ee7e8fa615e023d1cdb884a1777a99220febf"
   integrity sha512-l7+bg0ThDVR9s7JIg0NfUZvbSMRCQL4iPyPXVH6uUwCHh8tQ6kVgVybOTvkcMAzQeXevHnSrNlaXUK8m770HsA==
 
 figgy-pudding@^3.5.1:
@@ -8820,6 +8820,11 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
+
+permissions-policy@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/permissions-policy/-/permissions-policy-0.6.0.tgz#9c01b1a8e360ab4955e20a7946abcb0fd34d276d"
+  integrity sha512-VfN72swhRiuvfejFP/N5hOVCyriBgzy1KiLE8mjN2KkCJCOtFv2N221SVUHYl0OPXIOoqu7tkc7efreiN7encA==
 
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.3.0"

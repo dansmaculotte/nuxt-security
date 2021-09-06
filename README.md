@@ -17,7 +17,7 @@ Here is a list of availables features :
 - X-Xss-Protection
 - X-Content-Type-Options header
 - Referrer-Policy header
-- Feature-Policy header
+- Permissions-Policy header (previously Feature-Policy)
 - security.txt file generation
 
 ### ToDo
@@ -113,19 +113,24 @@ Example:
 referrer: 'same-origin',
 ```
 
-### `features`
+### `permissions`
 
 - Default: `null`
 
-This option rely on [helmet feature policy](https://helmetjs.github.io/docs/feature-policy/) package.
+This option rely on [permissions policy](https://github.com/pedro-gbf/permissions-policy) package.
 
 Example:
 
 ```js
-features: {
-  notifications: ["'none'"]
+permissions: {
+  notifications: ['none']
 },
 ```
+
+**Note:** this come in replacement for `feature` option as Feature-Policy
+header [is deprecated](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy).
+Previous `features` option is still supported for now but displays a warning
+and use Permissions-Policy header instead.
 
 ### `securityFile`
 
