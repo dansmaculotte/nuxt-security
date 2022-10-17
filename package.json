@@ -1,6 +1,6 @@
 {
   "name": "@dansmaculotte/nuxt-security",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Module for Nuxt.js to configure security headers and more",
   "keywords": [
     "nuxt",
