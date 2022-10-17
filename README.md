@@ -4,7 +4,14 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-> Module for Nuxt.js to configure security headers and more
+> Module for Nuxt.js 2  to configure security headers and more
+
+## Compatibility with Nuxt releases
+
+This module as been developed for Nuxt 2. If you are looking for an equivalent
+compatible with Nuxt 3, please have a look to
+[https://www.npmjs.com/package/nuxt-security](https://www.npmjs.com/package/nuxt-security).
+
 
 ## Features
 
