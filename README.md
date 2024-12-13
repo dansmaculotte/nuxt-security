@@ -1,4 +1,6 @@
-# @dansmaculotte/nuxt-security
+**IMPORTANT**: I will not support this module anymore.
+
+@dansmaculotte/nuxt-security
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
